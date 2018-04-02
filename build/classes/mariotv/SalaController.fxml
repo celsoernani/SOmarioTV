@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mariotv.SalaControllerController">
+    <children>
+      <AnchorPane id="AnchorPane" prefHeight="288.0" prefWidth="581.0" style="-fx-background-color: white;">
+          <children>
+            <ImageView fitHeight="517.0" fitWidth="732.0" layoutY="-11.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Background%20TelaInicial.jpg" />
+               </image>
+            </ImageView>
+              <Button fx:id="button1" contentDisplay="BOTTOM" graphicTextGap="0.0" layoutX="326.0" layoutY="387.0" onAction="#handleButtonAction" style="-fx-background-color: gold;" text="PLAY" textAlignment="CENTER" textFill="#0707ff" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <effect>
+                  <Bloom threshold="1.0" />
+               </effect>
+            </Button>
+            <Text fill="#d32626" layoutX="45.0" layoutY="76.0" stroke="#3b2fe8" strokeWidth="0.0" text="Quantidade Hospedes:" textAlignment="CENTER" wrappingWidth="231.99999932199717">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Quant_hosp" alignment="CENTER" layoutX="33.0" layoutY="99.0" prefHeight="24.0" prefWidth="232.0" promptText="Digite aqui" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </TextField>
+            <Text fill="#900707" layoutX="474.0" layoutY="76.0" stroke="#3b2fe8" strokeWidth="0.0" text="Quantidade Canais::" textAlignment="CENTER" wrappingWidth="207.0000023841858">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Quant_canais" alignment="CENTER" layoutX="449.0" layoutY="99.0" prefHeight="32.0" prefWidth="232.0" promptText="Digite aqui" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </TextField>
+            <Text fill="#d32626" layoutX="45.0" layoutY="199.0" stroke="#3b2fe8" strokeWidth="0.0" text="Tempo Minimo Assistir" textAlignment="CENTER" wrappingWidth="207.0000023841858">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Assistir_min" alignment="CENTER" layoutX="45.0" layoutY="224.0" prefHeight="32.0" prefWidth="232.0" promptText="Digite aqui" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </TextField>
+            <Text fill="#d32626" layoutX="456.0" layoutY="199.0" stroke="#3b2fe8" strokeWidth="0.0" text="Tempo Maximo Assistir" textAlignment="CENTER" wrappingWidth="218.0000023841858">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Assistir_max" alignment="CENTER" layoutX="449.0" layoutY="224.0" prefHeight="24.0" prefWidth="232.0" promptText="Digite aqui" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </TextField>
+            <Text fill="#d32626" layoutX="45.0" layoutY="313.0" stroke="#3b2fe8" strokeWidth="0.0" text="Tempo Minimo Descansar" textAlignment="CENTER" wrappingWidth="232.0000000076834">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Descansar_min" alignment="CENTER" layoutX="45.0" layoutY="343.0" prefHeight="32.0" prefWidth="232.0" promptText="Digite aqui" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </TextField>
+            <Text fill="#d32626" layoutX="449.0" layoutY="313.0" stroke="#3b2fe8" strokeWidth="0.0" text="Tempo máximo Descansar" textAlignment="CENTER" wrappingWidth="231.9999949336052">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Descansar_max" alignment="CENTER" layoutX="449.0" layoutY="343.0" prefHeight="32.0" prefWidth="232.0" promptText="Digite aqui" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Acens" size="18.0" />
+               </font>
+            </TextField>
+          </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

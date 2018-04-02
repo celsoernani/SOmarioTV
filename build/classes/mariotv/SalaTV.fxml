@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="432.0" prefWidth="1006.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane fx:id="ancora2" layoutX="760.0" layoutY="119.0" prefHeight="100.0" prefWidth="123.0">
+               <children>
+                  <Label fx:id="ch2" layoutX="44.0" layoutY="19.0" />
+                  <Label fx:id="dh2" layoutX="44.0" layoutY="42.0" />
+                  <Label fx:id="ah2" layoutX="44.0" layoutY="74.0" />
+               </children></AnchorPane>
+            <TextArea fx:id="logText" layoutX="-1.0" layoutY="576.0" prefHeight="154.0" prefWidth="1006.0" />
+            <ImageView fitHeight="522.0" fitWidth="763.0" layoutX="-4.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/TelaGame.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospede1" fitHeight="64.0" fitWidth="47.0" layoutX="14.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Boo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospede2" fitHeight="64.0" fitWidth="47.0" layoutX="79.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Goomba.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospede3" fitHeight="64.0" fitWidth="47.0" layoutX="136.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Flower%20-%20Fire.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospede4" fitHeight="64.0" fitWidth="47.0" layoutX="497.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Star.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospede5" fitHeight="64.0" fitWidth="47.0" layoutX="202.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Mushroom%20-%201UP.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospede6" fitHeight="64.0" fitWidth="47.0" layoutX="259.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Mushroom%20-%20Super.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospede7" fitHeight="64.0" fitWidth="47.0" layoutX="317.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Chain%20Chomp.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospede8" fitHeight="64.0" fitWidth="47.0" layoutX="377.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Bullet%20Bill.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospede9" fitHeight="64.0" fitWidth="47.0" layoutX="439.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Shell%20-%20Green.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospede10" fitHeight="64.0" fitWidth="47.0" layoutX="555.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Shell%20-%20Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="843.0" layoutX="-81.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/p13.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Acerto" fitHeight="66.0" fitWidth="111.0" layoutX="126.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../TV/AcertoMizeravi.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="DB" fitHeight="66.0" fitWidth="111.0" layoutX="126.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../TV/DragonBall.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Crazy" fitHeight="66.0" fitWidth="96.0" layoutX="126.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../TV/CrazyFrog.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Minions" fitHeight="66.0" fitWidth="120.0" layoutX="126.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../TV/Minions.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Mortal" fitHeight="66.0" fitWidth="111.0" layoutX="128.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../TV/MortalKombat.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Rock" fitHeight="66.0" fitWidth="111.0" layoutX="126.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../TV/RockNRoll.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Mario" fitHeight="66.0" fitWidth="111.0" layoutX="124.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../TV/SuperMarioWorld.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Top" fitHeight="66.0" fitWidth="111.0" layoutX="126.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../TV/TopGear.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="ancora0" layoutX="756.0" layoutY="-7.0" prefHeight="587.0" prefWidth="250.0">
+               <children>
+                  <Label fx:id="ch0" layoutX="48.0" layoutY="14.0" />
+                  <Label fx:id="dh0" layoutX="48.0" layoutY="42.0" />
+                  <Label fx:id="ah0" layoutX="48.0" layoutY="69.0" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="ancora1" layoutX="881.0" layoutY="-4.0" prefHeight="100.0" prefWidth="131.0">
+               <children>
+                  <Label fx:id="ch1" layoutX="48.0" layoutY="21.0" textAlignment="CENTER" />
+                  <Label fx:id="dh1" layoutX="48.0" layoutY="49.0" />
+                  <Label fx:id="ah1" layoutX="48.0" layoutY="76.0" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="ancora3" layoutX="883.0" layoutY="119.0" prefHeight="100.0" prefWidth="123.0">
+               <children>
+                  <Label fx:id="ch3" layoutX="51.0" layoutY="15.0" />
+                  <Label fx:id="dh3" layoutX="51.0" layoutY="43.0" />
+                  <Label fx:id="ah3" layoutX="51.0" layoutY="70.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ancora4" layoutX="760.0" layoutY="243.0" prefHeight="100.0" prefWidth="123.0">
+               <children>
+                  <Label fx:id="ch4" layoutX="47.0" layoutY="8.0" />
+                  <Label fx:id="dh4" layoutX="47.0" layoutY="36.0" />
+                  <Label fx:id="ah4" layoutX="47.0" layoutY="63.0" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="ancora5" layoutX="883.0" layoutY="243.0" prefHeight="100.0" prefWidth="123.0">
+               <children>
+                  <Label fx:id="ch5" layoutX="48.0" layoutY="14.0" />
+                  <Label fx:id="dh5" layoutX="48.0" layoutY="42.0" />
+                  <Label fx:id="ah5" layoutX="48.0" layoutY="69.0" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="ancora6" layoutX="759.0" layoutY="369.0" prefHeight="100.0" prefWidth="123.0">
+               <children>
+                  <Label fx:id="ch6" layoutX="48.0" layoutY="14.0" />
+                  <Label fx:id="dh6" layoutX="48.0" layoutY="42.0" />
+                  <Label fx:id="ah6" layoutX="48.0" layoutY="69.0" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="ancora7" layoutX="869.0" layoutY="369.0" prefHeight="100.0" prefWidth="123.0">
+               <children>
+                  <Label fx:id="ch7" layoutX="48.0" layoutY="14.0" />
+                  <Label fx:id="dh7" layoutX="48.0" layoutY="42.0" />
+                  <Label fx:id="ah7" layoutX="48.0" layoutY="69.0" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="ancora8" layoutX="759.0" layoutY="476.0" prefHeight="100.0" prefWidth="123.0">
+               <children>
+                  <Label fx:id="ch8" layoutX="50.0" layoutY="20.0" />
+                  <Label fx:id="dh8" layoutX="50.0" layoutY="48.0" />
+                  <Label fx:id="ah8" layoutX="50.0" layoutY="75.0" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="ancora9" layoutX="881.0" layoutY="476.0" prefHeight="100.0" prefWidth="123.0">
+               <children>
+                  <Label fx:id="ch9" layoutX="42.0" layoutY="18.0" />
+                  <Label fx:id="dh9" layoutX="42.0" layoutY="46.0" />
+                  <Label fx:id="ah9" layoutX="42.0" layoutY="73.0" />
+               </children></AnchorPane>
+            <Label fx:id="labelCanal" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" layoutX="20.0" layoutY="43.0" prefHeight="47.0" prefWidth="83.0" textAlignment="CENTER" textFill="RED" textOverrun="CLIP">
+               <font>
+                  <Font name="Lucida Console" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="leao" fitHeight="73.0" fitWidth="111.0" layoutX="142.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../Pictures/20150613-0033-Fortaleza.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cassiano" fitHeight="83.0" fitWidth="97.0" layoutX="126.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../Pictures/hqdefault.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
