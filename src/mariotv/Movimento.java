@@ -69,15 +69,12 @@ public class Movimento {
         cicloBloquear = new SequentialTransition(direitaFastest, baixo, direita, cimaFastest);
         cicloAssistirDnv = new SequentialTransition(direitaFastest, cimaFastest, direita, baixoFast);
         
-        this.deslocamento = 25*numThread;
-        this.numThread=numThread;
     
     }
     
   
     public void assistir(){
         Platform.runLater(() -> {
-            esquerdaFast.setToX(215 - (75 * numThread));
             baixoFast.setToY(-380);
             cicloAssistir.play();
         });
@@ -85,8 +82,6 @@ public class Movimento {
     }
     public void assistirDnv(){
         Platform.runLater(() -> {
-       direitaFastest.setToX(-310);
-        direita.setToX(215-(25*numThread));
         baixoFast.setToY(-380);
         cicloAssistirDnv.play();
         });
@@ -101,10 +96,7 @@ public class Movimento {
     }
     public void bloquear(){
         Platform.runLater(() -> {
-//            direitaFastest.setToX(-500);
-//            baixo.setToY(-300);
-            direita.setToX(300 - deslocamento);
-            cimaFastest.setToY(-210);
+            cimaFastest.setToY(-235);
             cicloBloquear.play();
         });
       

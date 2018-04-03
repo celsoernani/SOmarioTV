@@ -24,23 +24,32 @@ import javafx.scene.media.AudioClip;
 
 
 public class SalaTVController implements Initializable {
-     @FXML
+    @FXML
+    private AnchorPane ancora2;
+
+    @FXML
+    private Label ch2;
+
+    @FXML
+    private Label dh2;
+
+    @FXML
+    private Label ah2;
+
+    @FXML
     private TextArea logText;
 
     @FXML
     private ImageView hospede1;
 
     @FXML
-    private ImageView hospede2;
-
-    @FXML
-    private ImageView hospede3;
+    private ImageView hospede5;
 
     @FXML
     private ImageView hospede4;
 
     @FXML
-    private ImageView hospede5;
+    private ImageView hospede10;
 
     @FXML
     private ImageView hospede6;
@@ -49,13 +58,16 @@ public class SalaTVController implements Initializable {
     private ImageView hospede7;
 
     @FXML
+    private ImageView hospede3;
+
+    @FXML
+    private ImageView hospede2;
+
+    @FXML
     private ImageView hospede8;
 
     @FXML
     private ImageView hospede9;
-
-    @FXML
-    private ImageView hospede10;
 
     @FXML
     private ImageView Acerto;
@@ -94,6 +106,18 @@ public class SalaTVController implements Initializable {
     private Label ah0;
 
     @FXML
+    private Label hosp1;
+
+    @FXML
+    private Label canalhops1;
+
+    @FXML
+    private Label descansohops1;
+
+    @FXML
+    private Label assistindohosp1;
+
+    @FXML
     private AnchorPane ancora1;
 
     @FXML
@@ -106,16 +130,16 @@ public class SalaTVController implements Initializable {
     private Label ah1;
 
     @FXML
-    private AnchorPane ancora2;
+    private Label hosp2;
 
     @FXML
-    private Label ch2;
+    private Label canalhosp2;
 
     @FXML
-    private Label dh2;
+    private Label descansohops2;
 
     @FXML
-    private Label ah2;
+    private Label assistindohops2;
 
     @FXML
     private AnchorPane ancora3;
@@ -200,18 +224,15 @@ public class SalaTVController implements Initializable {
 
     @FXML
     private Label ah9;
-    
-    @FXML
-    private ImageView leao;
-    
-    
-    @FXML
-    private ImageView cassiano;
 
-    
     @FXML
     private Label labelCanal;
 
+    @FXML
+    private ImageView leao;
+
+    @FXML
+    private ImageView cassiano;
 
        public SalaTVController(Hotel hotel) {
         this.hotel = hotel;
@@ -227,7 +248,7 @@ public class SalaTVController implements Initializable {
         private final ImageView hospedes[] = new ImageView[10];
         private final ImageView canais[] = new ImageView[10];
         private final AudioClip audios[] = new AudioClip[10];
-        private int referencia, info=0;
+        private int ref;
         private final Movimento move[] = new Movimento[10];
         private final long contagem[] = new long[10];
         boolean assistirDnv[] = new boolean[10];
@@ -247,7 +268,7 @@ public class SalaTVController implements Initializable {
     private final String mario = getClass().getResource("SuperMarioWorld.mp3").toString();
     private final String top = getClass().getResource("TopGear.mp3").toString();
     private final String hino = getClass().getResource("HinoLeao.mp3").toString();
-    private final String cassi = getClass().getResource("cassiano.mp3").toString();
+    private final String cassi = getClass().getResource("47.mp3").toString();
     
         
         
@@ -283,7 +304,7 @@ public class SalaTVController implements Initializable {
         audios[8] = new AudioClip(hino);
         
         canais[9] = Acerto;
-        audios[9] = new AudioClip(cassi);
+        audios[9] = new AudioClip(acerto);
         
        
         
@@ -310,15 +331,6 @@ public class SalaTVController implements Initializable {
         Platform.runLater(() -> {
             label.setText(x);
         });
-    }
-    private void paint(AnchorPane i, String x){ 
-        try {
-            printar.acquire();
-        } catch (InterruptedException ex) {
-            Logger.getLogger(SalaTVController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        Platform.runLater(() -> {i.setStyle(x);});
-        printar.release();
     }
     public void logLigarTv(int x){
         Platform.runLater(() -> {
@@ -367,6 +379,7 @@ public class SalaTVController implements Initializable {
             audios[8].stop();
             canais[9].setVisible(false);
             audios[9].stop();
+             ref=0;
             
         }
         if(hotel.getCanalFav(Integer.parseInt(Thread.currentThread().getName())) == hotel.getCanalTv(1)){
@@ -391,6 +404,7 @@ public class SalaTVController implements Initializable {
             audios[8].stop();
             canais[9].setVisible(false);
             audios[9].stop();
+            ref=1;
         }
         if(hotel.getCanalFav(Integer.parseInt(Thread.currentThread().getName())) == hotel.getCanalTv(2)){
             canais[0].setVisible(false);
@@ -413,6 +427,7 @@ public class SalaTVController implements Initializable {
             audios[8].stop();
             canais[9].setVisible(false);
             audios[9].stop();
+            ref=2;
         }
         if(hotel.getCanalFav(Integer.parseInt(Thread.currentThread().getName())) == hotel.getCanalTv(3)){
             canais[0].setVisible(false);
@@ -435,6 +450,7 @@ public class SalaTVController implements Initializable {
             audios[8].stop();
             canais[9].setVisible(false);
             audios[9].stop();
+            ref=3;
         }
         if(hotel.getCanalFav(Integer.parseInt(Thread.currentThread().getName())) == hotel.getCanalTv(4)){
            canais[0].setVisible(false);
@@ -457,6 +473,7 @@ public class SalaTVController implements Initializable {
             audios[8].stop();
             canais[9].setVisible(false);
             audios[9].stop();
+            ref=4;
             
             
         }
@@ -481,6 +498,7 @@ public class SalaTVController implements Initializable {
             audios[8].stop();
             canais[9].setVisible(false);
             audios[9].stop();
+            ref=5;
         }
         if(hotel.getCanalFav(Integer.parseInt(Thread.currentThread().getName())) == hotel.getCanalTv(6)){
              canais[0].setVisible(false);
@@ -503,6 +521,7 @@ public class SalaTVController implements Initializable {
             audios[8].stop();
             canais[9].setVisible(false);
             audios[9].stop();
+            ref=6;
         }
         if(hotel.getCanalFav(Integer.parseInt(Thread.currentThread().getName())) == hotel.getCanalTv(7)){
              canais[0].setVisible(false);
@@ -525,6 +544,7 @@ public class SalaTVController implements Initializable {
             audios[8].stop();
             canais[9].setVisible(false);
             audios[9].stop();
+            ref=7;
         }
          if(hotel.getCanalFav(Integer.parseInt(Thread.currentThread().getName())) == hotel.getCanalTv(8)){
            canais[0].setVisible(false);
@@ -547,6 +567,7 @@ public class SalaTVController implements Initializable {
             audios[8].play();
             canais[9].setVisible(false);
             audios[9].stop();
+            ref = 8;
         }
         if(hotel.getCanalFav(Integer.parseInt(Thread.currentThread().getName())) == hotel.getCanalTv(9)){
              canais[0].setVisible(false);
@@ -569,6 +590,7 @@ public class SalaTVController implements Initializable {
             audios[8].stop();
             canais[9].setVisible(true);
             audios[9].play();
+            ref = 9;
         }
         
       
@@ -582,6 +604,10 @@ public class SalaTVController implements Initializable {
             print(ch0, Integer.toString(hotel.getCanalFav(0)));
             print(ah0, Integer.toString(hotel.getTemposThreadsTV(0)));
             print(dh0, Integer.toString(hotel.getTemposThreadsDesc(0)));
+            hosp1.setVisible(true);
+            canalhops1.setVisible(true);
+            descansohops1.setVisible(true);
+            assistindohosp1.setVisible(true);
             ancora0.setOpacity(1);
             
         }
@@ -589,6 +615,10 @@ public class SalaTVController implements Initializable {
             print(ch1, Integer.toString(hotel.getCanalFav(1)));
             print(ah1, Integer.toString(hotel.getTemposThreadsTV(1)));
             print(dh1, Integer.toString(hotel.getTemposThreadsDesc(1)));
+            hosp2.setVisible(true);
+            canalhosp2.setVisible(true);
+            descansohops2.setVisible(true);
+            assistindohops2.setVisible(true);
             ancora1.setOpacity(1);
  
     
@@ -675,8 +705,9 @@ public class SalaTVController implements Initializable {
                 }
                  
                 assistindo++;
-               
+                    if(assistindo == 1){
                   mudarCanal();
+                    }
                 
                 mutex.release();
                 
@@ -695,8 +726,8 @@ public class SalaTVController implements Initializable {
                     logDesligarTv(Integer.parseInt(Thread.currentThread().getName())); //Thread desligou a TV
                     long garantia = System.currentTimeMillis();
                      while (garantia > System.currentTimeMillis() - 100) {}
-                     canais[referencia].setVisible(false);
-                    audios[referencia].stop();
+                    canais[ref].setVisible(false);
+                    audios[ref].stop();
                     Platform.runLater(() -> {
                      labelCanal.setText("");
                     
