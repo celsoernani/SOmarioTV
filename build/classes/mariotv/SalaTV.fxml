@@ -11,16 +11,33 @@
    <children>
       <AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="952.0" style="-fx-background-color: white;">
          <children>
-            <AnchorPane fx:id="ancora2" layoutX="760.0" layoutY="119.0" prefHeight="100.0" prefWidth="123.0">
+            <AnchorPane fx:id="ancora2" focusTraversable="true" layoutX="760.0" layoutY="124.0" prefHeight="111.0" prefWidth="138.0" style="-fx-background-color: white;">
                <children>
-                  <Label fx:id="ch2" layoutX="44.0" layoutY="19.0" />
-                  <Label fx:id="dh2" layoutX="44.0" layoutY="42.0" />
-                  <Label fx:id="ah2" layoutX="44.0" layoutY="74.0" />
-               </children></AnchorPane>
-            <TextArea fx:id="logText" layoutX="-1.0" layoutY="576.0" prefHeight="154.0" prefWidth="1006.0" style="-fx-background-color: black;">
-               <font>
-                  <Font name="Super Mario Bros." size="15.0" />
-               </font></TextArea>
+                  <Label fx:id="ch2" layoutX="84.0" layoutY="40.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dh2" layoutX="84.0" layoutY="67.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ah2" layoutX="84.0" layoutY="91.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hosp3" layoutX="39.0" layoutY="14.0" text="Hospede 3" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="canalhosp3" layoutX="12.0" layoutY="42.0" text="Canal:" visible="false" />
+                  <Label fx:id="descansohops3" layoutX="13.0" layoutY="69.0" text="Descanso:" visible="false" />
+                  <Label fx:id="assistindohops3" layoutX="12.0" layoutY="93.0" text="Assistindo:" visible="false" />
+               </children>
+            </AnchorPane>
             <ImageView fitHeight="522.0" fitWidth="763.0" layoutX="-4.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/WhatsApp%20Image%202018-04-02%20at%2021.27.58.jpeg" />
@@ -116,86 +133,216 @@
                   <Image url="@../TV/TopGear.png" />
                </image>
             </ImageView>
-            <AnchorPane fx:id="ancora0" layoutX="756.0" layoutY="-7.0" prefHeight="111.0" prefWidth="138.0">
+            <AnchorPane fx:id="ancora0" focusTraversable="true" layoutX="760.0" layoutY="2.0" prefHeight="111.0" prefWidth="138.0" style="-fx-background-color: white;">
                <children>
-                  <Label fx:id="ch0" layoutX="76.0" layoutY="42.0">
+                  <Label fx:id="ch0" layoutX="84.0" layoutY="40.0">
                      <font>
                         <Font name="Berlin Sans FB" size="15.0" />
                      </font></Label>
-                  <Label fx:id="dh0" layoutX="76.0" layoutY="69.0">
+                  <Label fx:id="dh0" layoutX="84.0" layoutY="67.0">
                      <font>
                         <Font name="Berlin Sans FB" size="15.0" />
                      </font></Label>
-                  <Label fx:id="ah0" layoutX="76.0" layoutY="101.0">
+                  <Label fx:id="ah0" layoutX="84.0" layoutY="91.0">
                      <font>
                         <Font name="Berlin Sans FB" size="15.0" />
                      </font></Label>
-                  <Label fx:id="hosp1" layoutX="39.0" layoutY="14.0" text="Hospede 1 " visible="false" />
+                  <Label fx:id="hosp1" layoutX="39.0" layoutY="14.0" text="Hospede 1 " visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
                   <Label fx:id="canalhops1" layoutX="14.0" layoutY="42.0" text="Canal:" visible="false" />
                   <Label fx:id="descansohops1" layoutX="13.0" layoutY="69.0" text="Descanso:" visible="false" />
                   <Label fx:id="assistindohosp1" layoutX="12.0" layoutY="93.0" text="Assistindo:" visible="false" />
                </children></AnchorPane>
-            <AnchorPane fx:id="ancora1" layoutX="881.0" layoutY="-4.0" prefHeight="100.0" prefWidth="131.0">
+            <AnchorPane fx:id="ancora1" layoutX="881.0" layoutY="8.0" prefHeight="100.0" prefWidth="131.0">
                <children>
                   <Label fx:id="ch1" layoutX="87.0" layoutY="38.0" textAlignment="CENTER">
                      <font>
                         <Font name="Berlin Sans FB" size="15.0" />
                      </font></Label>
-                  <Label fx:id="dh1" layoutX="87.0" layoutY="65.0">
+                  <Label fx:id="dh1" layoutX="87.0" layoutY="63.0">
                      <font>
                         <Font name="Berlin Sans FB" size="15.0" />
                      </font></Label>
-                  <Label fx:id="ah1" layoutX="87.0" layoutY="89.0">
+                  <Label fx:id="ah1" layoutX="87.0" layoutY="87.0">
                      <font>
                         <Font name="Berlin Sans FB" size="15.0" />
                      </font></Label>
-                  <Label fx:id="hosp2" layoutX="41.0" layoutY="10.0" text="Hospede 2" visible="false" />
+                  <Label fx:id="hosp2" layoutX="41.0" layoutY="10.0" text="Hospede 2" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
                   <Label fx:id="canalhosp2" layoutX="16.0" layoutY="38.0" text="Canal:" visible="false" />
                   <Label fx:id="descansohops2" layoutX="15.0" layoutY="65.0" text="Descanso:" visible="false" />
                   <Label fx:id="assistindohops2" layoutX="14.0" layoutY="89.0" text="Assistindo:" visible="false" />
                </children></AnchorPane>
-            <AnchorPane fx:id="ancora3" layoutX="883.0" layoutY="119.0" prefHeight="100.0" prefWidth="123.0">
+            <AnchorPane fx:id="ancora3" layoutX="881.0" layoutY="125.0" prefHeight="100.0" prefWidth="123.0">
                <children>
-                  <Label fx:id="ch3" layoutX="51.0" layoutY="15.0" />
-                  <Label fx:id="dh3" layoutX="51.0" layoutY="43.0" />
-                  <Label fx:id="ah3" layoutX="51.0" layoutY="70.0" />
+                  <Label fx:id="ch3" layoutX="85.0" layoutY="40.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="dh3" layoutX="85.0" layoutY="65.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="ah3" layoutX="85.0" layoutY="90.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="hosp4" layoutX="40.0" layoutY="14.0" text="Hospede 4" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="canalhosp4" layoutX="14.0" layoutY="42.0" text="Canal:" visible="false" />
+                  <Label fx:id="assistindohops4" layoutX="12.0" layoutY="93.0" text="Assistindo:" visible="false" />
+                  <Label fx:id="descansohops4" layoutX="13.0" layoutY="69.0" text="Descanso:" visible="false" />
                </children>
             </AnchorPane>
-            <AnchorPane fx:id="ancora4" layoutX="760.0" layoutY="243.0" prefHeight="100.0" prefWidth="123.0">
+            <AnchorPane fx:id="ancora4" layoutX="759.0" layoutY="241.0" prefHeight="100.0" prefWidth="123.0">
                <children>
-                  <Label fx:id="ch4" layoutX="47.0" layoutY="8.0" />
-                  <Label fx:id="dh4" layoutX="47.0" layoutY="36.0" />
-                  <Label fx:id="ah4" layoutX="47.0" layoutY="63.0" />
+                  <Label fx:id="ch4" layoutX="83.0" layoutY="41.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="dh4" layoutX="83.0" layoutY="68.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="ah4" layoutX="83.0" layoutY="92.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="hosp5" layoutX="40.0" layoutY="16.0" text="Hospede 5" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="canalhosp5" layoutX="14.0" layoutY="43.0" text="Canal:" visible="false" />
+                  <Label fx:id="assistindohops5" layoutX="14.0" layoutY="91.0" text="Assistindo:" visible="false" />
+                  <Label fx:id="descansohops5" layoutX="14.0" layoutY="70.0" text="Descanso:" visible="false" />
                </children></AnchorPane>
             <AnchorPane fx:id="ancora5" layoutX="883.0" layoutY="243.0" prefHeight="100.0" prefWidth="123.0">
                <children>
-                  <Label fx:id="ch5" layoutX="48.0" layoutY="14.0" />
-                  <Label fx:id="dh5" layoutX="48.0" layoutY="42.0" />
-                  <Label fx:id="ah5" layoutX="48.0" layoutY="69.0" />
+                  <Label fx:id="ch5" layoutX="83.0" layoutY="39.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="dh5" layoutX="83.0" layoutY="66.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="ah5" layoutX="83.0" layoutY="90.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="hosp6" layoutX="33.0" layoutY="11.0" text="Hospede 6" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="canalhosp6" layoutX="8.0" layoutY="39.0" text="Canal:" visible="false" />
+                  <Label fx:id="assistindohops6" layoutX="6.0" layoutY="90.0" text="Assistindo:" visible="false" />
+                  <Label fx:id="descansohops6" layoutX="7.0" layoutY="66.0" text="Descanso:" visible="false" />
                </children></AnchorPane>
-            <AnchorPane fx:id="ancora6" layoutX="759.0" layoutY="369.0" prefHeight="100.0" prefWidth="123.0">
+            <AnchorPane fx:id="ancora6" layoutX="759.0" layoutY="365.0" prefHeight="100.0" prefWidth="123.0">
                <children>
-                  <Label fx:id="ch6" layoutX="48.0" layoutY="14.0" />
-                  <Label fx:id="dh6" layoutX="48.0" layoutY="42.0" />
-                  <Label fx:id="ah6" layoutX="48.0" layoutY="69.0" />
-               </children></AnchorPane>
-            <AnchorPane fx:id="ancora7" layoutX="869.0" layoutY="369.0" prefHeight="100.0" prefWidth="123.0">
+                  <Label fx:id="ch6" layoutX="83.0" layoutY="39.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dh6" layoutX="83.0" layoutY="64.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ah6" layoutX="83.0" layoutY="89.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hosp7" layoutX="40.0" layoutY="6.0" text="Hospede 7" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="canalhosp7" layoutX="8.0" layoutY="39.0" text="Canal:" visible="false" />
+                  <Label fx:id="assistindohops7" layoutX="6.0" layoutY="90.0" text="Assistindo:" visible="false" />
+                  <Label fx:id="descansohops7" layoutX="7.0" layoutY="66.0" text="Descanso:" visible="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ancora7" layoutX="885.0" layoutY="366.0" prefHeight="100.0" prefWidth="123.0">
                <children>
-                  <Label fx:id="ch7" layoutX="48.0" layoutY="14.0" />
-                  <Label fx:id="dh7" layoutX="48.0" layoutY="42.0" />
-                  <Label fx:id="ah7" layoutX="48.0" layoutY="69.0" />
+                  <Label fx:id="ch7" layoutX="85.0" layoutY="39.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="dh7" layoutX="85.0" layoutY="66.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="ah7" layoutX="85.0" layoutY="90.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="hosp8" layoutX="33.0" layoutY="6.0" text="Hospede 8" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="canalhosp8" layoutX="16.0" layoutY="39.0" text="Canal:" visible="false" />
+                  <Label fx:id="assistindohops8" layoutX="14.0" layoutY="90.0" text="Assistindo:" visible="false" />
+                  <Label fx:id="descansohops8" layoutX="15.0" layoutY="66.0" text="Descanso:" visible="false" />
                </children></AnchorPane>
             <AnchorPane fx:id="ancora8" layoutX="759.0" layoutY="476.0" prefHeight="100.0" prefWidth="123.0">
                <children>
-                  <Label fx:id="ch8" layoutX="50.0" layoutY="20.0" />
-                  <Label fx:id="dh8" layoutX="50.0" layoutY="48.0" />
-                  <Label fx:id="ah8" layoutX="50.0" layoutY="75.0" />
+                  <Label fx:id="ch8" layoutX="85.0" layoutY="29.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dh8" layoutX="85.0" layoutY="56.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="ah8" layoutX="85.0" layoutY="80.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="hosp9" layoutX="36.0" layoutY="6.0" text="Hospede 9" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="canalhosp9" layoutX="14.0" layoutY="31.0" text="Canal:" visible="false" />
+                  <Label fx:id="assistindohops9" layoutX="12.0" layoutY="82.0" text="Assistindo:" visible="false" />
+                  <Label fx:id="descansohops9" layoutX="13.0" layoutY="58.0" text="Descanso:" visible="false" />
                </children></AnchorPane>
             <AnchorPane fx:id="ancora9" layoutX="881.0" layoutY="476.0" prefHeight="100.0" prefWidth="123.0">
                <children>
-                  <Label fx:id="ch9" layoutX="42.0" layoutY="18.0" />
-                  <Label fx:id="dh9" layoutX="42.0" layoutY="46.0" />
-                  <Label fx:id="ah9" layoutX="42.0" layoutY="73.0" />
+                  <Label fx:id="ch9" layoutX="85.0" layoutY="27.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="dh9" layoutX="85.0" layoutY="55.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="ah9" layoutX="85.0" layoutY="82.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="hosp10" layoutX="35.0" layoutY="6.0" text="Hospede 10" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="canalhosp10" layoutX="16.0" layoutY="29.0" text="Canal:" visible="false" />
+                  <Label fx:id="assistindohops10" layoutX="14.0" layoutY="80.0" text="Assistindo:" visible="false" />
+                  <Label fx:id="descansohops10" layoutX="15.0" layoutY="56.0" text="Descanso:" visible="false" />
                </children></AnchorPane>
             <Label fx:id="labelCanal" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" layoutX="62.0" layoutY="23.0" prefHeight="79.0" prefWidth="123.0" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
                <font>
@@ -217,6 +364,10 @@
                   <Image url="@../Pictures/p13.png" />
                </image>
             </ImageView>
+            <TextArea fx:id="logText" layoutX="-1.0" layoutY="576.0" prefHeight="154.0" prefWidth="1006.0" style="-fx-background-color: black;">
+               <font>
+                  <Font name="Super Mario Bros." size="15.0" />
+               </font></TextArea>
          </children>
       </AnchorPane>
    </children>

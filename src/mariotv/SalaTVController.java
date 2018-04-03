@@ -24,7 +24,7 @@ import javafx.scene.media.AudioClip;
 
 
 public class SalaTVController implements Initializable {
-    @FXML
+ @FXML
     private AnchorPane ancora2;
 
     @FXML
@@ -37,7 +37,16 @@ public class SalaTVController implements Initializable {
     private Label ah2;
 
     @FXML
-    private TextArea logText;
+    private Label hosp3;
+
+    @FXML
+    private Label canalhosp3;
+
+    @FXML
+    private Label descansohops3;
+
+    @FXML
+    private Label assistindohops3;
 
     @FXML
     private ImageView hospede1;
@@ -154,6 +163,18 @@ public class SalaTVController implements Initializable {
     private Label ah3;
 
     @FXML
+    private Label hosp4;
+
+    @FXML
+    private Label canalhosp4;
+
+    @FXML
+    private Label assistindohops4;
+
+    @FXML
+    private Label descansohops4;
+
+    @FXML
     private AnchorPane ancora4;
 
     @FXML
@@ -164,6 +185,18 @@ public class SalaTVController implements Initializable {
 
     @FXML
     private Label ah4;
+
+    @FXML
+    private Label hosp5;
+
+    @FXML
+    private Label canalhosp5;
+
+    @FXML
+    private Label assistindohops5;
+
+    @FXML
+    private Label descansohops5;
 
     @FXML
     private AnchorPane ancora5;
@@ -178,6 +211,18 @@ public class SalaTVController implements Initializable {
     private Label ah5;
 
     @FXML
+    private Label hosp6;
+
+    @FXML
+    private Label canalhosp6;
+
+    @FXML
+    private Label assistindohops6;
+
+    @FXML
+    private Label descansohops6;
+
+    @FXML
     private AnchorPane ancora6;
 
     @FXML
@@ -188,6 +233,18 @@ public class SalaTVController implements Initializable {
 
     @FXML
     private Label ah6;
+
+    @FXML
+    private Label hosp7;
+
+    @FXML
+    private Label canalhosp7;
+
+    @FXML
+    private Label assistindohops7;
+
+    @FXML
+    private Label descansohops7;
 
     @FXML
     private AnchorPane ancora7;
@@ -202,6 +259,18 @@ public class SalaTVController implements Initializable {
     private Label ah7;
 
     @FXML
+    private Label hosp8;
+
+    @FXML
+    private Label canalhosp8;
+
+    @FXML
+    private Label assistindohops8;
+
+    @FXML
+    private Label descansohops8;
+
+    @FXML
     private AnchorPane ancora8;
 
     @FXML
@@ -212,6 +281,18 @@ public class SalaTVController implements Initializable {
 
     @FXML
     private Label ah8;
+
+    @FXML
+    private Label hosp9;
+
+    @FXML
+    private Label canalhosp9;
+
+    @FXML
+    private Label assistindohops9;
+
+    @FXML
+    private Label descansohops9;
 
     @FXML
     private AnchorPane ancora9;
@@ -226,6 +307,18 @@ public class SalaTVController implements Initializable {
     private Label ah9;
 
     @FXML
+    private Label hosp10;
+
+    @FXML
+    private Label canalhosp10;
+
+    @FXML
+    private Label assistindohops10;
+
+    @FXML
+    private Label descansohops10;
+
+    @FXML
     private Label labelCanal;
 
     @FXML
@@ -233,6 +326,9 @@ public class SalaTVController implements Initializable {
 
     @FXML
     private ImageView cassiano;
+
+    @FXML
+    private TextArea logText;
 
        public SalaTVController(Hotel hotel) {
         this.hotel = hotel;
@@ -609,6 +705,7 @@ public class SalaTVController implements Initializable {
             descansohops1.setVisible(true);
             assistindohosp1.setVisible(true);
             ancora0.setOpacity(1);
+           
             
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 1) {
@@ -627,6 +724,10 @@ public class SalaTVController implements Initializable {
             print(ch2, Integer.toString(hotel.getCanalFav(2)));
             print(ah2, Integer.toString(hotel.getTemposThreadsTV(2)));
             print(dh2, Integer.toString(hotel.getTemposThreadsDesc(2)));
+            hosp3.setVisible(true);
+            canalhosp3.setVisible(true);
+            descansohops3.setVisible(true);
+            assistindohops3.setVisible(true);
             ancora2.setOpacity(1);
           
         }
@@ -634,6 +735,10 @@ public class SalaTVController implements Initializable {
             print(ch3, Integer.toString(hotel.getCanalFav(3)));
             print(ah3, Integer.toString(hotel.getTemposThreadsTV(3)));
             print(dh3, Integer.toString(hotel.getTemposThreadsDesc(3)));
+            hosp4.setVisible(true);
+            canalhosp4.setVisible(true);
+            descansohops4.setVisible(true);
+            assistindohops4.setVisible(true);
             ancora3.setOpacity(1);
            
         }
@@ -641,6 +746,10 @@ public class SalaTVController implements Initializable {
             print(ch4, Integer.toString(hotel.getCanalFav(4)));
             print(ah4, Integer.toString(hotel.getTemposThreadsTV(4)));
             print(dh4, Integer.toString(hotel.getTemposThreadsDesc(4)));
+            hosp5.setVisible(true);
+            canalhosp5.setVisible(true);
+            descansohops5.setVisible(true);
+            assistindohops5.setVisible(true);
             ancora4.setOpacity(1);
           
         }
@@ -648,6 +757,10 @@ public class SalaTVController implements Initializable {
             print(ch5, Integer.toString(hotel.getCanalFav(5)));
             print(ah5, Integer.toString(hotel.getTemposThreadsTV(5)));
             print(dh5, Integer.toString(hotel.getTemposThreadsDesc(5)));
+             hosp6.setVisible(true);
+            canalhosp6.setVisible(true);
+            descansohops6.setVisible(true);
+            assistindohops6.setVisible(true);
             ancora5.setOpacity(1);
           
         }
@@ -655,6 +768,10 @@ public class SalaTVController implements Initializable {
             print(ch6, Integer.toString(hotel.getCanalFav(6)));
             print(ah6, Integer.toString(hotel.getTemposThreadsTV(6)));
             print(dh6, Integer.toString(hotel.getTemposThreadsDesc(6)));
+              hosp7.setVisible(true);
+            canalhosp7.setVisible(true);
+            descansohops7.setVisible(true);
+            assistindohops7.setVisible(true);
             ancora6.setOpacity(1);
      
         }
@@ -662,6 +779,10 @@ public class SalaTVController implements Initializable {
             print(ch7, Integer.toString(hotel.getCanalFav(7)));
             print(ah7, Integer.toString(hotel.getTemposThreadsTV(7)));
             print(dh7, Integer.toString(hotel.getTemposThreadsDesc(7)));
+              hosp8.setVisible(true);
+            canalhosp8.setVisible(true);
+            descansohops8.setVisible(true);
+            assistindohops8.setVisible(true);
             ancora7.setOpacity(1);
          
         }
@@ -669,6 +790,10 @@ public class SalaTVController implements Initializable {
             print(ch8, Integer.toString(hotel.getCanalFav(8)));
             print(ah8, Integer.toString(hotel.getTemposThreadsTV(8)));
             print(dh8, Integer.toString(hotel.getTemposThreadsDesc(8)));
+              hosp9.setVisible(true);
+            canalhosp9.setVisible(true);
+            descansohops9.setVisible(true);
+            assistindohops9.setVisible(true);
             ancora8.setOpacity(1);
          
         }
@@ -676,6 +801,10 @@ public class SalaTVController implements Initializable {
             print(ch9, Integer.toString(hotel.getCanalFav(9)));
             print(ah9, Integer.toString(hotel.getTemposThreadsTV(9)));
             print(dh9, Integer.toString(hotel.getTemposThreadsDesc(9)));
+              hosp10.setVisible(true);
+            canalhosp10.setVisible(true);
+            descansohops10.setVisible(true);
+            assistindohops10.setVisible(true);
             ancora9.setOpacity(1);
         
         }   
@@ -696,8 +825,8 @@ public class SalaTVController implements Initializable {
                 if(assistindo == 0) {
                                            
 					canaltv = hotel.getCanalFav(Integer.parseInt(Thread.currentThread().getName()));
-                                         Platform.runLater(() -> {labelCanal.setText(Integer.toString(canaltv));
-                                          logLigarTv(Integer.parseInt(Thread.currentThread().getName()));//Adiciona ao log que a thread entrou na sala e ligou a Tv
+                                         Platform.runLater(() -> {labelCanal.setText("Canal: "+Integer.toString(canaltv));
+                                          logLigarTv(Integer.parseInt(Thread.currentThread().getName()));
                                          });
                                          logLigarTv(Integer.parseInt(Thread.currentThread().getName()));
                                         
@@ -796,6 +925,7 @@ public void criarHospedes() {
         logAssistir(Integer.parseInt(Thread.currentThread().getName()));
         
         if (Integer.parseInt(Thread.currentThread().getName()) == 0) {
+              ancora0.setStyle("-fx-background-color: #FFFF00");
             assistir.release();
             if(assistirDnv[0] || mesmosCanais){move[0].assistirDnv();}
             else{move[0].assistir();}
@@ -812,8 +942,8 @@ public void criarHospedes() {
         }
         
         if (Integer.parseInt(Thread.currentThread().getName()) == 1) {
-       
-            assistir.release();
+             ancora1.setStyle("-fx-background-color: #FFFF00");
+             assistir.release();
             if(assistirDnv[1] || mesmosCanais){move[1].assistirDnv();} 
             else {move[1].assistir();}
             contagem[1] = System.currentTimeMillis();
@@ -828,7 +958,8 @@ public void criarHospedes() {
         }
         
         if (Integer.parseInt(Thread.currentThread().getName()) == 2) {
-            assistir.release();
+              ancora2.setStyle("-fx-background-color: #FFFF00");
+                assistir.release();
             if(assistirDnv[2] || mesmosCanais){move[2].assistirDnv();} 
             else {move[2].assistir();}
             contagem[2] = System.currentTimeMillis();
@@ -842,6 +973,7 @@ public void criarHospedes() {
             print(ah2, Integer.toString(hotel.getTemposThreadsTV(2)));
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 3) {
+              ancora3.setStyle("-fx-background-color: #FFFF00");
             assistir.release();
             if(assistirDnv[3]|| mesmosCanais){move[3].assistirDnv();}
             else{move[3].assistir();}
@@ -858,7 +990,9 @@ public void criarHospedes() {
         }
         
         if (Integer.parseInt(Thread.currentThread().getName()) == 4) {
+                  ancora4.setStyle("-fx-background-color: #FFFF00");
             assistir.release();
+ 
             if(assistirDnv[4]|| mesmosCanais){move[4].assistirDnv();}
             else{move[4].assistir();}
             
@@ -873,6 +1007,7 @@ public void criarHospedes() {
             print(ah4, Integer.toString(hotel.getTemposThreadsTV(0)));
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 5) {
+            ancora5.setStyle("-fx-background-color: #FFFF00");
             assistir.release();
             if(assistirDnv[5]|| mesmosCanais){move[5].assistirDnv();}
             else{move[5].assistir();}
@@ -888,6 +1023,7 @@ public void criarHospedes() {
             print(ah5, Integer.toString(hotel.getTemposThreadsTV(5)));
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 6) {
+              ancora6.setStyle("-fx-background-color: #FFFF00");
             assistir.release();
             if(assistirDnv[6]|| mesmosCanais){move[6].assistirDnv();}
             else{move[6].assistir();}
@@ -903,6 +1039,7 @@ public void criarHospedes() {
             print(ah6, Integer.toString(hotel.getTemposThreadsTV(6)));
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 7) {
+              ancora7.setStyle("-fx-background-color: #FFFF00");
             assistir.release();
             if(assistirDnv[7]|| mesmosCanais){move[7].assistirDnv();}
             else{move[7].assistir();}
@@ -918,6 +1055,8 @@ public void criarHospedes() {
             print(ah7, Integer.toString(hotel.getTemposThreadsTV(7)));
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 8) {
+            ancora8.setStyle("-fx-background-color: #FFFF00");
+            
             assistir.release();
             if(assistirDnv[8] || mesmosCanais){move[8].assistirDnv();}
             else{move[8].assistir();}
@@ -933,6 +1072,7 @@ public void criarHospedes() {
             print(ah8, Integer.toString(hotel.getTemposThreadsTV(8)));
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 9) {
+            ancora9.setStyle("-fx-background-color: #FFFF00");
             assistir.release();
             if(assistirDnv[9] || mesmosCanais){move[9].assistirDnv();}
             else{move[9].assistir();}
@@ -961,6 +1101,7 @@ public void criarHospedes() {
         logDescansar(Integer.parseInt(Thread.currentThread().getName()));
         
         if (Integer.parseInt(Thread.currentThread().getName()) == 0) {
+            ancora0.setStyle("-fx-background-color: #add8e6");
             descansar.release();
             move[0].descansar();
             contagem[0] = System.currentTimeMillis();
@@ -982,6 +1123,7 @@ public void criarHospedes() {
             else{
                 assistirDnv[0]=false;
                 move[0].bloquear();
+                  ancora0.setStyle("-fx-background-color: #FF0000");
                 contagem[0] = System.currentTimeMillis();
                 while (contagem[0] > (System.currentTimeMillis() - 2000)) {
                 }
@@ -989,7 +1131,7 @@ public void criarHospedes() {
         }
         
         if (Integer.parseInt(Thread.currentThread().getName()) == 1) {
-            
+                ancora1.setStyle("-fx-background-color: #add8e6");
             descansar.release();
             move[1].descansar();
             contagem[1] = System.currentTimeMillis();
@@ -1009,6 +1151,7 @@ public void criarHospedes() {
             } else {
                 assistirDnv[1] = false;
                 move[1].bloquear();
+                    ancora1.setStyle("-fx-background-color: #FF0000");
                 contagem[1] = System.currentTimeMillis();
                 while (contagem[1] > (System.currentTimeMillis() - 2000)) {
                 }
@@ -1016,6 +1159,8 @@ public void criarHospedes() {
         }
         
         if (Integer.parseInt(Thread.currentThread().getName()) == 2) {
+                        ancora2.setStyle("-fx-background-color: #add8e6");
+
             descansar.release();
             move[2].descansar();
             contagem[2] = System.currentTimeMillis();
@@ -1037,12 +1182,15 @@ public void criarHospedes() {
             } else {
                 assistirDnv[2] = false;
                 move[2].bloquear();
+                    ancora2.setStyle("-fx-background-color: #FF0000");
                 contagem[2] = System.currentTimeMillis();
                 while (contagem[2] > (System.currentTimeMillis() - 2000)) {
                 }
             }
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 3) {
+                        ancora3.setStyle("-fx-background-color: #add8e6");
+
             descansar.release();
             move[3].descansar();
             contagem[3] = System.currentTimeMillis();
@@ -1064,12 +1212,15 @@ public void criarHospedes() {
             else{
                 assistirDnv[3]=false;
                 move[3].bloquear();
+                    ancora3.setStyle("-fx-background-color: #FF0000");
                 contagem[3] = System.currentTimeMillis();
                 while (contagem[3] > (System.currentTimeMillis() - 2000)) {
                 }
             }
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 4) {
+                        ancora4.setStyle("-fx-background-color: #add8e6");
+
             descansar.release();
             move[4].descansar();
             contagem[4] = System.currentTimeMillis();
@@ -1090,12 +1241,15 @@ public void criarHospedes() {
             else{
                 assistirDnv[4]=false;
                 move[4].bloquear();
+                    ancora4.setStyle("-fx-background-color: #FF0000");
                 contagem[4] = System.currentTimeMillis();
                 while (contagem[4] > (System.currentTimeMillis() - 2000)) {
                 }
             }
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 5) {
+                        ancora5.setStyle("-fx-background-color: #add8e6");
+
             descansar.release();
             move[5].descansar();
             contagem[5] = System.currentTimeMillis();
@@ -1117,12 +1271,15 @@ public void criarHospedes() {
             else{
                 assistirDnv[5]=false;
                 move[5].bloquear();
+                    ancora5.setStyle("-fx-background-color: #FF0000");
                 contagem[5] = System.currentTimeMillis();
                 while (contagem[5] > (System.currentTimeMillis() - 2000)) {
                 }
             }
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 6) {
+                        ancora6.setStyle("-fx-background-color: #add8e6");
+
             descansar.release();
             move[6].descansar();
             contagem[6] = System.currentTimeMillis();
@@ -1144,12 +1301,15 @@ public void criarHospedes() {
             else{
                 assistirDnv[6]=false;
                 move[6].bloquear();
+                    ancora6.setStyle("-fx-background-color: #FF0000");
                 contagem[6] = System.currentTimeMillis();
                 while (contagem[6] > (System.currentTimeMillis() - 2000)) {
                 }
             }
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 7) {
+                        ancora7.setStyle("-fx-background-color: #add8e6");
+
             descansar.release();
             move[7].descansar();
             contagem[7] = System.currentTimeMillis();
@@ -1171,12 +1331,15 @@ public void criarHospedes() {
             else{
                 assistirDnv[7]=false;
                 move[7].bloquear();
+                    ancora7.setStyle("-fx-background-color: #FF0000");
                 contagem[7] = System.currentTimeMillis();
                 while (contagem[7] > (System.currentTimeMillis() - 2000)) {
                 }
             }
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 8) {
+                       ancora8.setStyle("-fx-background-color: #add8e6");
+
             descansar.release();
             move[8].descansar();
             contagem[8] = System.currentTimeMillis();
@@ -1198,12 +1361,15 @@ public void criarHospedes() {
             else{
                 assistirDnv[8]=false;
                 move[8].bloquear();
+                    ancora8.setStyle("-fx-background-color: #FF0000");
                 contagem[8] = System.currentTimeMillis();
                 while (contagem[8] > (System.currentTimeMillis() - 2000)) {
                 }
             }
         }
         if (Integer.parseInt(Thread.currentThread().getName()) == 9) {
+                        ancora9.setStyle("-fx-background-color: #add8e6");
+
             descansar.release();
             move[9].descansar();
             contagem[9] = System.currentTimeMillis();
@@ -1224,6 +1390,7 @@ public void criarHospedes() {
             else{
                 assistirDnv[9]=false;
                 move[9].bloquear();
+                    ancora9.setStyle("-fx-background-color: #FF0000");
                 contagem[9] = System.currentTimeMillis();
                 while (contagem[9] > (System.currentTimeMillis() - 2000)) {
                 }
